@@ -37,7 +37,7 @@ function b = bisection(f, low, upp, precision=6,err=0.000001)
         m = (l+u)/2;
         fm = f(m);
 
-        i +=1;
+        i = i + 1;
     endwhile
 
     printf("\n");

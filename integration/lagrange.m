@@ -7,5 +7,4 @@ function p = lagrange(tx, ty)
         L = poly([tx(1:k - 1), tx(k + 1:n)]);
         p = p + L * ty(k) / polyval(L, tx(k));
     end
-
 end

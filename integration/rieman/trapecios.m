@@ -1,11 +1,11 @@
-function I = trapecios(f, a, b, n)
+function A = trapecios(f, a, b, n)
     h = (b - a) / n;
 
-    I = 0;
+    A = 0;
 
     for x = 1:n
-        I = I + f(a + (x - 1) * h) + f(a + x * h);
+        A = A + f(a + (x - 1) * h) + f(a + x * h);
     endfor
 
-    I = I * h / 2;
+    A = A * h / 2;
 endfunction
