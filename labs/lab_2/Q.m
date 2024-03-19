@@ -4,8 +4,8 @@ function q = Q(n)
 
     for k = 1:n
         pol = [1 pol];
-    endfor
+    end
 
     q = pol;
 
-endfunction
+end

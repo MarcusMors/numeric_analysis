@@ -24,7 +24,7 @@ s = 0;
 
 for i = 1:n
     s = s + r(i);
-endfor
+end
 
 b = s
 

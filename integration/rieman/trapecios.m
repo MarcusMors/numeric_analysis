@@ -5,7 +5,7 @@ function A = trapecios(f, a, b, n)
 
     for x = 1:n
         A = A + f(a + (x - 1) * h) + f(a + x * h);
-    endfor
+    end
 
     A = A * h / 2;
-endfunction
+end

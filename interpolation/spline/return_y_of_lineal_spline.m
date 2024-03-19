@@ -16,6 +16,6 @@ function y = return_y_of_lineal_spline(tx, ty, x)
             y(i) = ty(lower) + (ty(upper) - ty(lower)) * (x(i) - tx(lower)) / (tx(upper) - tx(lower));
         end
 
-    endfor
+    end
 
 end

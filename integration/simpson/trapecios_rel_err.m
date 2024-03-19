@@ -18,11 +18,12 @@ function [partition_size, relative_err] = trapecios_rel_err(f, a, b, exact_val, 
         bot = abs(exact_val);
 
         relative_accuracy = bot / top;
+        % relative_accuracy = top / bot;
         rs = [relative_accuracy rs];
         n = n * 2;
-    endwhile
+    end
 
     partition_size = ns;
     relative_err = rs;
 
-endfunction
+end

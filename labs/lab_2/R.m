@@ -10,4 +10,4 @@ function pol = R(n)
 
     pol = l + [zeros(1, ln - rn) r];
 
-endfunction
+end

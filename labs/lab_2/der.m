@@ -4,7 +4,7 @@ function pol = der (p)
 
     for i = 1:n - 1
         dp = [dp ((n - i) * p(i))];
-    endfor
+    end
 
     pol = dp;
-endfunction
+end

@@ -9,8 +9,8 @@ function A = riemann(f, a, b, n)
         y2 = f(a + x * h);
 
         A = A + y1 + y2;
-    endfor
+    end
 
     A = A * h / 2;
 
-endfunction
+end

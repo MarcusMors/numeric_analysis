@@ -38,9 +38,9 @@ function b = bisection(f, low, upp, precision=6,err=0.000001)
         fm = f(m);
 
         i = i + 1;
-    endwhile
+    end
 
     printf("\n");
     b = m;
 
-endfunction
+end

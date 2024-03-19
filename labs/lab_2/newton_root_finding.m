@@ -9,9 +9,9 @@ function y = newton_root_finding(g, x0, tol)
         i = i + 1;
         fprintf('%3.0f |%6.6f\n', i, x0);
         x1 = g(x0);
-    endwhile
+    end
 
     y = x1;
-endfunction
+end
 
 #g=@(x) x- f(x)/f'(x)

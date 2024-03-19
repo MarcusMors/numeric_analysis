@@ -29,4 +29,4 @@ function compare_functions(f_battery, a, b, exact)
 
     plot(partition_size, relative_errors);
 
-endfunction
+end

@@ -10,7 +10,7 @@ function y_eval = quadratic_spline(x, y, x_eval)
             0, 1, 2 * x(i)];
         b = [y(i); y(i + 1); 2 * (y(i + 1) - y(i)) / h];
         coefficients(i, :) = A \ b;
-    endfor
+    end
 
     % Evaluate the quadratic spline
     y_eval = zeros(size(x_eval));
@@ -18,6 +18,6 @@ function y_eval = quadratic_spline(x, y, x_eval)
     for i = 1:num_segments
         idx = x_eval >= x(i) & x_eval <= x(i + 1);
         y_eval(idx) = coefficients(i, 1) + coefficients(i, 2) * x_eval(idx) + coefficients(i, 3) * x_eval(idx).^2;
-    endfor
+    end
 
-endfunction
+end

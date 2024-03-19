@@ -15,8 +15,8 @@ function create_table_row(nums, i_column = true, precision = 8, separator_ch='|'
         num_int_digits = length(num2str(floor(abs(nums{i})))) - 1;
         t_format = sprintf("%c%%+.%df", separator_ch, precision - num_int_digits);
         fprintf(t_format, nums{i});
-    endfor
+    end
 
     fprintf("%c\n", separator_ch)
 
-endfunction
+end

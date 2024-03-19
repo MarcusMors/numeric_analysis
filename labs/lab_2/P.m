@@ -4,8 +4,8 @@ function p = P(n)
 
     for k = 0:n
         pol = [k pol];
-    endfor
+    end
 
     p = pol;
 
-endfunction
+end

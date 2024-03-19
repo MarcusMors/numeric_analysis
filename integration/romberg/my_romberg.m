@@ -12,10 +12,10 @@ function A = my_romberg(f, a, b, err)
 
         for j = 2:k
             r(k, j) = (4^(j - 1) * r(k, j - 1) - r(k - 1, j - 1)) / (4^(j - 1) - 1);
-        endfor
+        end
 
-    endwhile
+    end
 
     A = r;
 
-endfunction
+end

@@ -39,9 +39,9 @@ function create_table_header (strs, i_column = true, width = 10, separator_ch='|
         endif
 
         fprintf('%c%s%s%s', separator_ch, left_blank, strs{i}, right_blank)
-    endfor
+    end
 
     fprintf("%c\n", separator_ch)
     % disp("\n")
 
-endfunction
+end
